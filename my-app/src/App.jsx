@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 // ─── Ability Configs ──────────────────────────────────────────────────────────
 const ABILITIES = {
-  sorcerer:{name:"⚗️ SORCERER",emoji:"🔮",label:"Sorcerer",getColor:(t)=>`hsl(${270+Math.sin(t)*40},100%,${55+Math.random()*20}%)`,bgGradient:["#0a0014","#1a0030"],glowColor:"#cc66ff",particleSize:()=>2+Math.random()*5,shape:"circle",trail:true,gravity:-0.02,forceScale:1.2,emitRate:4,maxLife:220},
+  sorcerer:{name:"⚗️ LOOM",emoji:"🔮",label:"Sorcerer",getColor:(t)=>`hsl(${270+Math.sin(t)*40},100%,${55+Math.random()*20}%)`,bgGradient:["#0a0014","#1a0030"],glowColor:"#cc66ff",particleSize:()=>2+Math.random()*5,shape:"circle",trail:true,gravity:-0.02,forceScale:1.2,emitRate:4,maxLife:220},
   timestone:{name:"💚 TIME STONE",emoji:"💚",label:"Time",getColor:(t)=>`hsl(${140+Math.sin(t*2)*15},100%,${45+Math.random()*25}%)`,bgGradient:["#001a0a","#003318"],glowColor:"#00ff88",particleSize:()=>3+Math.random()*4,shape:"circle",trail:true,gravity:0,forceScale:0,emitRate:3,maxLife:999,freeze:true},
   rainbow:{name:"🌈 RAINBOW",emoji:"🌈",label:"Rainbow",getColor:(t,i)=>`hsl(${(t*3+(i||0)*20)%360},100%,60%)`,bgGradient:["#0a0018","#180028"],glowColor:"#ff88ff",particleSize:()=>2+Math.random()*6,shape:"circle",trail:true,gravity:-0.01,forceScale:0.8,emitRate:6,maxLife:180},
   cyberpunk:{name:"⚡ CYBERPUNK",emoji:"⚡",label:"Cyber",getColor:()=>["#00ffff","#ff00ff","#ffff00","#00ff88"][Math.floor(Math.random()*4)],bgGradient:["#000a12","#001020"],glowColor:"#00ffff",particleSize:()=>1+Math.random()*3,shape:"square",trail:false,gravity:0.05,forceScale:1.6,emitRate:7,maxLife:120},
