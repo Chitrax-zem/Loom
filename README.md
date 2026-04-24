@@ -1,4 +1,4 @@
-# ✦ ARCANE FORGE ✦
+# ✦ LOOM ✦
 ### Hand-Controlled Particle Sorcery — AR + Default Mode
 
 <div align="center">
